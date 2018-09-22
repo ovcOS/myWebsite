@@ -1,0 +1,104 @@
+#particles-js {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  background-image: linear-gradient(to bottom, #252627, #2b383e, #2d4b52, #2d5f62, #32746d);
+  font-family: $headers-font;
+}
+
+button {
+  font-family: $headers-font;
+  letter-spacing: 1.2px;
+}
+
+h1 {
+  line-height: 1.0;
+}
+
+h1, h3 {
+  font-weight: lighter;
+  letter-spacing: 1.2px;
+}
+
+p {
+  line-height: 1.8;
+}
+
+a {
+  text-decoration: none;
+}
+
+.welcome {
+  font-size: 25px;
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  color: $white;
+}
+
+.contact-me {
+  width: 200px;
+  height: 50px;
+  margin-top: 65px;
+  color: $white;
+  background: transparent;
+  border: 3px solid $accent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  font-size: 18px;
+  transition: 0.5s ease;
+
+}
+
+.contact-me:hover {
+  border-radius: 25px;
+  transition: 0.5s ease;
+  background: $accent;
+  font-size: 19px;
+}
+
+.media-references {
+  position: absolute;
+  right: 4%;
+  top: 5%;
+  width: 220px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.find-me-on{
+  color: white;
+  font-family: $body-font;
+  font-size: 20px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  width: 77px;
+}
+
+.icon {
+  color: $white;
+  font-size: 30px;
+  transition: ease 0.1s;
+}
+
+.icon:hover{
+  transform: scale(1.2);
+  color: white;
+}
+
+/* Style for page 2 */
+.page-2 {
+  height: 100vh;
+}
+
+/* Style for page 3 */
+.page-3 {
+  height: 100vh;
+}

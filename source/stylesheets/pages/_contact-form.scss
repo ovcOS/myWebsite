@@ -1,0 +1,110 @@
+#form-page {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+#form {
+  margin-top: 5%;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.form-message {
+  font-size: 18px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.form-style__top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: space-between;
+}
+
+.form-style__bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-style__submit {
+  display: flex;
+  justify-content: center;
+}
+
+.form-style-input {
+  background: transparent;
+  font-family: $body-font;
+  color: $white;
+  font-size: 19px;
+  border: none;
+  border-bottom: 1px solid $blue5;
+  margin-bottom: 15px;
+  padding-left: 7px;
+  letter-spacing: 1.1px;
+}
+
+.small-input {
+  width: 45%;
+}
+
+.big-input {
+  height: 200px;
+}
+
+textarea {
+  overflow: auto;
+
+  &:focus {
+    outline-width: 0;
+    border-bottom: 3px solid $blue5;
+  }
+}
+
+input:focus {
+  outline-width: 0;
+  border-bottom: 3px solid $blue5;
+}
+
+::placeholder {
+    color: #999999;
+    opacity: 1; /* Firefox */
+    font-family: $body-font;
+    letter-spacing: 1.1px;
+
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #999999;
+    font-family: $body-font;
+    letter-spacing: 1.1px;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #999999;
+    font-family: $body-font;
+    letter-spacing: 1.1px;
+}
+
+.form-button {
+  border: 2px solid $accent;
+  background: transparent;
+  font-family: $body-font;
+  color: $white;
+  border-radius: 3px;
+  font-size: 20px;
+  letter-spacing: 1.1px;
+  transition: 0.2s ease;
+  padding: 5px 20px;
+  margin-top: 4%;
+
+  &:hover {
+    transform: scale(1.1);
+    background: $accent;
+    border-radius: 25px;
+  }
+}

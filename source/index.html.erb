@@ -1,0 +1,58 @@
+<div id="fullpage">
+  <section class="section" data-anchor="welcomePage">
+    <div id="particles-js">
+      <div class="welcome">
+        <h1>Hello, I'm Uri</h1>
+        <h3>and I am a <strong>Web Developer</strong></h3>
+        <%= link_to "Contact Me", "contact.html", class: "contact-me" %>
+      </div>
+      <div class="links">
+        <a href="#projectsPage" class="link">MY PROJECTS</a>
+        <a href="#aboutMePage" class="link">ABOUT ME</a>
+      </div>
+      <div class="media-references">
+        <div class="find-me-on">Find me on </div>
+        <div class="icons">
+          <a href="https://github.com/ovcOS" target="_blank">
+            <i class="fab fa-github icon"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/oriol-vidal-cortes-37584080/" target="_blank">
+            <i class="fab fa-linkedin icon"></i>
+        </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" data-anchor="projectsPage">
+    <div class="page-2">
+      PROJECTS HERE
+    </div>
+  </section>
+
+  <section class="section" data-anchor="aboutMePage">
+    <div class="page-3">
+      ABOUT ME HERE
+    </div>
+  </section>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+      particlesJS.load('particles-js', 'javascripts/particles.json', function() {
+      console.log('Particles ready!');
+      });
+      </script>
+      <script type="text/javascript" src="javascripts/node_modules/fullpage.js/dist/fullpage.js"></script>
+      <script>
+        new fullpage('#fullpage', {
+          //options here
+          autoScrolling:true,
+          scrollingSpeed:800,
+          licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+          anchors:['welcomePage', 'projectsPage', 'aboutMePage'],
+        });
+
+      //methods
+    fullpage_api.setAllowScrolling(true);
+  </script>
