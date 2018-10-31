@@ -71,7 +71,7 @@ input:focus {
 }
 
 ::placeholder {
-    color: #999999;
+    color: $gray;
     opacity: 1; /* Firefox */
     font-family: $body-font;
     letter-spacing: 1.1px;
@@ -79,13 +79,13 @@ input:focus {
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: #999999;
+    color: $gray;
     font-family: $body-font;
     letter-spacing: 1.1px;
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
-    color: #999999;
+    color: $gray;
     font-family: $body-font;
     letter-spacing: 1.1px;
 }
@@ -104,7 +104,6 @@ input:focus {
 
   &:hover {
     transform: scale(1.1);
-    background: $accent;
     border-radius: 25px;
   }
 }

@@ -26,19 +26,51 @@
   </section>
 
   <section class="section" data-anchor="projectsPage">
-    <div class="page-2">
-      PROJECTS HERE
-      <div class="my-projects">
-        <h1>My Projects</h1>
-        <div class="project">
+    <h1 class="projects-header">My Projects</h1>
+    <div class="projects-container">
+      <div class="projects__dots" style="text-align:center">
+        <span class="projects__dots--dot" onclick="currentSlide(1)"></span>
+        <span class="projects__dots--dot" onclick="currentSlide(2)"></span>
+        <span class="projects__dots--dot" onclick="currentSlide(3)"></span>
+      </div>
+      <div class="my-projects fade">
+        <div class="project-horizontal">
           <div class="project-description">
-            <p>SWAPP is an online platform to meet people with whom to share skills. Based on user skills and interests, our system displays a customized list of matching people and the user is able to interact with them through our chat. It's never been easier to acquire a new skill by sharing one of your own!</p>
+            <h3><strong>Owner - SWAPP</strong></h3>
+            <p>SWAPP is an online platform to meet people with whom to share skills. Based on user skills and interests, our system displays a customized list of matching people and the user is able to interact with them through our chat. This was my final project during my Ruby on Rails formation at Le Wagon.</p>
           </div>
           <% link_to 'http://www.swapp.live/', target: "_blank" do %>
             <%= image_tag 'images/swappIphoneX.svg' %>
           <% end %>
         </div>
       </div>
+
+      <div class="my-projects fade">
+        <div class="project-vertical">
+          <div class="project-description">
+            <h3><strong>Collaborator - Amenitiz</strong></h3>
+            <p>Amenitiz is a website builder dedicated to the hotel industry. It also integrates a booking engine and a channel manager. As a Full Stack Developer at Amenitiz I was responsible for generating the mobile web version of the admin part of the app. Furthermore, I contributed to the website builder, coding new components and improving style of existing ones.</p>
+          </div>
+          <% link_to 'https://amenitiz.io/', target: "_blank" do %>
+            <%= image_tag 'amenitiz-responsive.png', style: "height: 320px" %>
+          <% end %>
+        </div>
+      </div>
+
+      <div class="my-projects fade">
+        <div class="project-vertical">
+          <div class="project-description">
+            <h3><strong>Owner - PUPP</strong></h3>
+            <p>PUPP is a web application dedicated to dogsitting. It allows dog owners to easily find a sitter for the day and it makes it simple to those wanting to dogsit for short periods of time. This project was part of my Ruby on Rails formation at Le Wagon.</p>
+          </div>
+          <% link_to 'https://pupp-app.herokuapp.com/', target: "_blank" do %>
+            <%= image_tag 'puppMacbookPro.svg', style: "height: 380px" %>
+          <% end %>
+        </div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
     </div>
   </section>
 
@@ -49,22 +81,55 @@
   </section>
 </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script>
-      particlesJS.load('particles-js', 'javascripts/particles.json', function() {
-      console.log('Particles ready!');
-      });
-      </script>
-      <script type="text/javascript" src="javascripts/node_modules/fullpage.js/dist/fullpage.js"></script>
-      <script>
-        new fullpage('#fullpage', {
-          //options here
-          autoScrolling:true,
-          scrollingSpeed:800,
-          licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-          anchors:['welcomePage', 'projectsPage', 'aboutMePage'],
-        });
-
-      //methods
-    fullpage_api.setAllowScrolling(true);
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+  particlesJS.load('particles-js', 'javascripts/particles.json', function() {
+  console.log('Particles ready!');
+  });
   </script>
+  <script type="text/javascript" src="javascripts/node_modules/fullpage.js/dist/fullpage.js"></script>
+  <script>
+    new fullpage('#fullpage', {
+      //options here
+      autoScrolling:true,
+      scrollingSpeed:800,
+      licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+      anchors:['welcomePage', 'projectsPage', 'aboutMePage'],
+    });
+
+  //methods
+  fullpage_api.setAllowScrolling(true);
+
+
+///// Vanilla slider:
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("my-projects");
+    var dots = document.getElementsByClassName("projects__dots--dot");
+    if (n > slides.length) {
+      slideIndex = 1
+    }
+    if (n < 1) {
+      slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+  }
+</script>
