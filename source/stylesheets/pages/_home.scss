@@ -63,8 +63,8 @@ a {
   position: absolute;
   right: 3%;
   top: 5%;
-  height: 95px;
-  width: 12%;
+  height: 75px;
+  width: 15%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -74,7 +74,7 @@ a {
 .find-me-on{
   color: white;
   font-family: $body-font;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .icons {
@@ -96,6 +96,26 @@ a {
 /* Style for page 2 */
 .page-2 {
   height: 100vh;
+
+  .my-projects {
+    width: 90vw;
+    color: $white;
+    margin-left: 50%;
+    margin-right: auto;
+    transform: translate(-50%, 0);
+  }
+
+  .project {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .project-description {
+    width: 50%;
+    text-align: center;
+    font-size: 18px;
+  }
 }
 
 /* Style for page 3 */
