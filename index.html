@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title></title>
+    <link href="stylesheets/application-6d023962.css" rel="stylesheet" />
+    <script src="javascripts/application-8517bb2e.js"></script>
+
+  </head>
+  <body>
+    <div id="decobar-left"></div>
+    <div id="decobar-right"></div>
+<div id="fullpage">
+  <section class="section" data-anchor="welcomePage">
+    <div id="particles-js">
+      <div class="welcome">
+        <h1>Hello, I'm Uri</h1>
+        <h3>and I'm a <strong>Web Developer</strong></h3>
+        <a href="contact.html" class="contact-me">Contact Me</a>
+      </div>
+      <div class="links">
+        <a href="#projectsPage" class="link">My Projects</a>
+        <a href="#aboutMePage" class="link">About Me</a>
+      </div>
+      <div class="media-references">
+        <div class="find-me-on">Find me on </div>
+        <div class="icons">
+          <a href="https://github.com/ovcOS" target="_blank">
+            <i class="fab fa-github icon"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/oriol-vidal-cortes-37584080/" target="_blank">
+            <i class="fab fa-linkedin icon"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" data-anchor="projectsPage">
+    <div class="section-2-header">
+      <h1 class="section-header">My Projects</h1>
+      <div class="links-2">
+        <a href="#welcomePage" class="link-2">Home</a>
+        <a href="#aboutMePage" class="link-2">About Me</a>
+      </div>
+    </div>
+    <div class="projects-container">
+      <div class="projects__dots" style="text-align:center">
+        <span class="projects__dots--dot" onclick="currentSlide(1)"></span>
+        <span class="projects__dots--dot" onclick="currentSlide(2)"></span>
+        <span class="projects__dots--dot" onclick="currentSlide(3)"></span>
+      </div>
+      <div class="my-projects fade">
+        <div class="project-horizontal">
+          <div class="project-description">
+            <h3><strong>Owner - SWAPP</strong></h3>
+            <p>SWAPP is an online platform to meet people with whom to share skills. Based on user skills and interests, our system displays a customized list of matching people and the user is able to interact with them through our chat. This was my final project during my Ruby on Rails formation at Le Wagon.</p>
+          </div>
+<a href="http://www.swapp.live/" target="_blank">            <img src="images/swappIphoneX-d30f90f0.svg" alt="Swappiphonex" />
+</a>        </div>
+      </div>
+
+      <div class="my-projects fade">
+        <div class="project-vertical">
+          <div class="project-description">
+            <h3><strong>Collaborator - Amenitiz</strong></h3>
+            <p>Amenitiz is a website builder dedicated to the hotel industry. It also integrates a booking engine and a channel manager. As a Full Stack Developer at Amenitiz I was responsible for generating the mobile web version of the admin part of the app. Furthermore, I contributed to the website builder, coding new components and improving style of existing ones.</p>
+          </div>
+<a href="https://amenitiz.io/" target="_blank">            <img src="images/amenitiz-responsive-f19f9e94.png" style="height: 320px" alt="Amenitiz responsive" />
+</a>        </div>
+      </div>
+
+      <div class="my-projects fade">
+        <div class="project-vertical">
+          <div class="project-description">
+            <h3><strong>Owner - PUPP</strong></h3>
+            <p>PUPP is a web application dedicated to dogsitting. It allows dog owners to easily find a sitter for the day and it makes it simple to those wanting to dogsit for short periods of time. This project was part of my Ruby on Rails formation at Le Wagon.</p>
+          </div>
+<a href="https://pupp-app.herokuapp.com/" target="_blank">            <img src="images/puppMacbookPro-441c0141.svg" style="height: 380px" alt="Puppmacbookpro" />
+</a>        </div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+  </section>
+
+  <section class="section" data-anchor="aboutMePage">
+    <div class="section-2-header">
+      <h1 class="section-header">Bio</h1>
+      <div class="links-2">
+        <a href="#welcomePage" class="link-2">Home</a>
+        <a href="#projectsPage" class="link-2">Projects</a>
+      </div>
+    </div>
+    <div class="profile-description">
+      <img src="images/me-e79ec1eb.jpeg" alt="Me" />
+      <p>Oriol Vidal-Cortés was born in Barcelona on the 19th of November of 1989. He grew up as a tennis player and, after graduating from high school, got an athletic full-tuition scholarship to compete for Ferris State University, MI, USA, while majoring in Biotechnology. He was not a vocational scientist, but found biology really interesting, reason why upon graduation he moved back home and continued onto grad school to obtain a MSc in Advanced Immunology from the University of Barcelona. His excellence as a student allowed him to obtain a research scholarship at the Vall d'Hebron Research Institue in Barcelona and pursued a PhD in the field of Oncology. However, during that process, he came to realize that he did not love what he was doing. He kept on going for some time, until the day he discovered code. He started getting into web development, went mad, took a leap of faith, quit his science career, and attended a coding bootcamp to change his life. The first language he learned was Ruby, which was a great one to begin with. Right after that, he got a job as a junior developer at Amenitiz, a start-up in the IT sector. After his contract eneded he moved to Zurich, Switzerland, with his partner, in search of a new beginning and a bright future.</p>
+    </div>
+
+  </section>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+  particlesJS.load('particles-js', 'javascripts/particles.json', function() {
+  console.log('Particles ready, you sneaky dev 🤓');
+  });
+  </script>
+  <script type="text/javascript" src="javascripts/node_modules/fullpage.js/dist/fullpage.js"></script>
+  <script>
+    new fullpage('#fullpage', {
+      //options here
+      autoScrolling:true,
+      scrollingSpeed:800,
+      licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+      anchors:['welcomePage', 'projectsPage', 'aboutMePage'],
+    });
+
+  //methods
+  fullpage_api.setAllowScrolling(true);
+
+
+/////  slider:
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("my-projects");
+    var dots = document.getElementsByClassName("projects__dots--dot");
+    if (n > slides.length) {
+      slideIndex = 1
+    }
+    if (n < 1) {
+      slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+  }
+</script>
+
+  </body>
+</html>
